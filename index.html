@@ -2,6 +2,12 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,27 +24,38 @@
             <div id="show-container">
                 <span><input type="text" readonly></span>
             </div>
-            <button id="reset">AC</button>
-            <button id="positive-negative-toggle">+/-</button>
-            <button id="percent">%</button>
-            <button class="operator" id="division">:</button>
-            <button class="operator" id="multiplication">x</button>
-            <button class="operator" id="subtraction">-</button>
-            <button class="operator" id="addition">+</button>
-            <button class="operator" id="result">=</button>
-            <div id="numbers">
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="number">0</button>
-                <button class="number">,</button>
-            </div>
+            
+            <ul>
+                <li>
+                    <button id="reset">AC</button>
+                    <button id="positive-negative-toggle">+/-</button>
+                    <button id="percent">%</button>
+                    <button class="operator" id="division">:</button>
+                </li>
+                <li>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator" id="multiplication">x</button>
+                </li>
+                <li>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator" id="subtraction">-</button>
+                </li>
+                <li>
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator" id="addition">+</button>
+                </li>
+                <li>
+                    <button class="number" id="zero">0</button>
+                    <button class="number">,</button>
+                    <button class="operator" id="result">=</button>
+                </li>
+            </ul>
         </div>
     </main>
     <footer><span>Developed by Samuel Alves.</span></footer>
